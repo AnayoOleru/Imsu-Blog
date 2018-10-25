@@ -11,9 +11,6 @@ Find the folder:
 Open the index file with any of your browser - viewing
 Or open the folder with any of your Code Editor - re-coding
 
-## Usage
-
-
 ## Built With
 
 * [Bootstrap](http://www.getbootstrap.com/) - The web framework used
