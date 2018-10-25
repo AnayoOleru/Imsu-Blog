@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title>IMSU AMEBO | ADMIN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/ico" href="Schoologo.png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+<div class="w3-container w3-bottom w3-right-align w3-margin-bottom" onclick="document.getElementById('id01').style.display='block'">
+  <button class="w3-button w3-xlarge w3-circle w3-green w3-card-4">+</button>
+</div>
+
+
+
+ <!-- log out modal -->
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+      </div>
+
+      <form class="w3-container w3-center">
+        <!-- uploading picture for post -->
+        <div class="w3-section">
+          <div class="form-group">
+        <label for="exampleFormControlFile1"><strong>Upload your picture from here(only images):</strong></label>
+      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+         
+          <label><b>Title</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="title" name="psw" required>
+          <label><b>Date</b></label>
+          <input class="w3-input w3-border" type="date" placeholder="day/month/year" name="psw" required>
+          <label for="bigText"></label>
+        <input type="text" name="value">
+          
+    <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">POST</button>
+        </div>
+      </form>
+
+      <div class="w3-container w3-margin-top w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- post: here to edit post or delete post. Post from firebase DB comes into this page to edit them or delete. You can't delete or edit a picture, but you can with the inputs... update button, takes the new changes and updates the data on firebase which reflects on all we-pages -->
+  <form class="w3-container">
+  <div  style="display: flex; justify-content: flex-start">
+  <div> 
+  <!-- <input type="file" name="pic" accept="image/*"> -->
+  Title:<br>
+  <input type="text" name="title">
+  <br>
+  Date:<br>
+  <input type="date" name="date">
+  <br>
+  <in
+  <br><br>
+  <button>Delete</button>
+  <button>Update</button>
+  <hr>
+
+
+  Title:<br>
+  <input type="text" name="title">
+  <br>
+  Date:<br>
+  <input type="date" name="date">
+  <br>
+  Link:<br>
+  <input type="value" name="link">
+  <br><br>
+  <button>Delete</button>
+  <button>Update</button>
+
+  </div>
+</div>
+  </form>
+</body>
+</html> 
